@@ -25,14 +25,14 @@ pipeline {
                 
             }
         }
-        stage('Unit Testing junit')
+       /* stage('Unit Testing junit')
         {
             steps
             {
                        junit 'target/surefire-reports/*.xml'
 
             }
-        }
+        }*/
         stage('Code Coverage')
         {
           steps
