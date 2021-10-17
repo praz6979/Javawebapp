@@ -32,7 +32,7 @@ pipeline {
                        junit 'target/surefire-reports/*.xml'
 
             }
-        }*/
+        }
         stage('Code Coverage')
         {
           steps
@@ -40,7 +40,7 @@ pipeline {
          
            jacoco()
            }
-        }
+        }*/
         
        stage('Code Quality Check (Sonarqube)')
         {
