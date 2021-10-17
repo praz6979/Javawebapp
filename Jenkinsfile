@@ -51,7 +51,7 @@ pipeline {
             sonarSources = 'src'
             sonarLanguage = 'java'
             sonarBinaries = 'target/classes'
-            sonarCoverageformat = '-Dsonar.coverage.jacoco.xmlReportPaths'
+            sonarCoverageformat = 'Dsonar.coverage.jacoco.xmlReportPaths'
             coverageReportsPath = 'target/jacoco.xml'
             sonarSourceEncoding = 'UTF-8'
             }
@@ -59,7 +59,7 @@ pipeline {
           {
              script
              {
-               def sonarscanner = tool 'sonar_scanner'
+               def sonarscanner = tool 'sonar-scanner'
                withSonarQubeEnv('sonarqube') {
                
                     // some block
